@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 import static com.fasterxml.jackson.annotation.JsonProperty.Access.READ_ONLY;
 
@@ -14,6 +15,7 @@ public class AuthorDto {
     public String id;
 
     @NotBlank
+    @NotNull
     public String name;
 
     public String nickname;

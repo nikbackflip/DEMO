@@ -17,7 +17,7 @@ import java.util.Set;
 @RestController
 @RequestMapping("/api/v1")
 @RequiredArgsConstructor
-@Api(tags = "API description for SWAGGER docuemntation")
+@Api(tags = "API description for SWAGGER documentation")
 @ApiResponses({
         @ApiResponse(code = 404, message = "Not found"),
         @ApiResponse(code = 500, message = "Internal Server Error")

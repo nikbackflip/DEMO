@@ -1,5 +1,6 @@
 package com.epam.demo.controller.dto;
 
+import com.epam.demo.controller.validation.ValidDescription;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
@@ -18,6 +19,7 @@ public class BookDto {
     @NotBlank
     public String title;
 
+    @ValidDescription
     public String description;
 
     @Positive
